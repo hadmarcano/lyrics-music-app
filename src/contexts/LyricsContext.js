@@ -1,8 +1,10 @@
 import React, { createContext, useState, useEffect } from "react";
 import { trackLyricsGet, trackGet } from "./../constants/index";
 
+// constructor de contexto
 export const LyricsContext = createContext();
 
+// controlador de manejo de contexto
 const LyricsContextProvider = ({ children }) => {
   const commontrack_id = window.location.pathname.split("/")[3];
   const [doneFetchTrack, setDoneFetchTrack] = useState(false);

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import { chartTracksGet, trackSearch } from "../../constants";
+import { chartTracksGet, trackSearch } from "../constants/index";
 
 export const SongsContext = createContext();
 
@@ -40,7 +40,7 @@ const SongsContextProvider = ({ children }) => {
   ) => {
     if (e.type === "keypress" && e.key !== "Enter") return;
     const words = q_track.match(/\w+/g); // RegExp : alfanumerico para buscar e forma individual por caracter o por palabra completa.
-    q_track = words && words.join("");
+    q_track = words && words.join(" ");
     if (q_track && q_track !== currentQTrack) {
       setCurrentQTrack(q_track);
       setDoneFetch(false);

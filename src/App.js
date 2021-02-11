@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import SongsContextProvider from "./constexts/SongsContext";
+import SongsContextProvider from "./contexts/SongsContext";
 import LyricsContextProvider from "./contexts/LyricsContext";
 import Header from "./components/Common/Header";
 import Songs from "./components/Songs";
@@ -18,13 +18,13 @@ const App = () => (
         </SongsContextProvider>
       </Route>
 
-      <Route exact path="/lyrics/track/:commonTrack_id">
+      {/* <Route exact path="/lyrics/track/:commonTrack_id">
         <LyricsContextProvider>
           <Lyrics />
         </LyricsContextProvider>
       </Route>
 
-      <Route component={NotFound} />
+      <Route component={NotFound} /> */}
     </Switch>
   </BrowserRouter>
 );
