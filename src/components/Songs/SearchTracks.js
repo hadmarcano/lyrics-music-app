@@ -13,7 +13,7 @@ const SearchTracks = ({ validateQTrack }) => (
       variant="outlined"
       onKeyPress={(e) => validateQTrack(e)}
     />
-    <IconButton onclick={(e) => validateQTrack(e)}>
+    <IconButton onClick={(e) => validateQTrack(e)}>
       {/* <SearchIcon /> */}
       Buscar
     </IconButton>
