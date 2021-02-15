@@ -18,13 +18,13 @@ const App = () => (
         </SongsContextProvider>
       </Route>
 
-      {/* <Route exact path="/lyrics/track/:commonTrack_id">
+      <Route exact path="/lyrics/track/:commonTrack_id">
         <LyricsContextProvider>
           <Lyrics />
         </LyricsContextProvider>
       </Route>
 
-      <Route component={NotFound} /> */}
+      <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
 );

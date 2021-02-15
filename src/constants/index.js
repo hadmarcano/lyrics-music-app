@@ -4,6 +4,7 @@
 // heroku nos provee de un servicio de gestion de CORS.
 
 const cors_anywhere = "https://cors-anywhere.herokuapp.com/";
+// const cors_anywhere = "https://cors-anywhere.herokuapp.com/corsdemo/";
 
 const base_url = "https://api.musixmatch.com/ws/1.1/";
 //const chart_tracks_get = 'chart.tracks.get?chart_name=top&page=1&page_size=5&country=it&f_has_lyrics=1';
@@ -14,6 +15,7 @@ const track_search_params =
   "&page=1&page_size=10&f_has_lyrics=1&s_track_rating=desc";
 const track_lyrics_get = "track.lyrics.get?commontrack_id=";
 const track_get = "track.get?commontrack_id=";
+
 const api_key = "&apikey=60cc3846416ad0c2234ab3427c85378f";
 
 // Definicion de llamada a la API

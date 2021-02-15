@@ -36,7 +36,7 @@ const SongsContextProvider = ({ children }) => {
 
   const validateQTrack = (
     e,
-    q_track = document.querySelector("#qtrack").value.toLowerCase().trim()
+    q_track = document.querySelector("#q_track").value.toLowerCase().trim()
   ) => {
     if (e.type === "keypress" && e.key !== "Enter") return;
     const words = q_track.match(/\w+/g); // RegExp : alfanumerico para buscar e forma individual por caracter o por palabra completa.

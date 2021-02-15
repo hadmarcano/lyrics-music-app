@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import lyrics from "../../assets/img/lyrics.png";
 import back from "../../assets/img/back.png";
 
-const ButtonPrimary = ({ type, to }) => {
+const ButtonPrimary = ({ type, to }) => (
   <Link className="ButtonPrimary" to={to}>
     <Button variant="contained" color="primary">
       <img
@@ -13,7 +13,7 @@ const ButtonPrimary = ({ type, to }) => {
       />
       {type === "lyrics" ? "lyrics" : "Go back"}
     </Button>
-  </Link>;
-};
+  </Link>
+);
 
 export default ButtonPrimary;

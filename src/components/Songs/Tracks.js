@@ -22,6 +22,7 @@ const Tracks = ({ tracks, text }) => (
               track_name={track_name}
               album_name={album_name}
               artist_name={artist_name}
+              commontrack_id={commontrack_id}
             />
           );
         })}
